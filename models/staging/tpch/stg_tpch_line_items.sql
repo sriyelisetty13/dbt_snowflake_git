@@ -2,8 +2,7 @@ with source as (
 
     select * from {{ source('tpch', 'lineitem') }}
 
-),
-
+)
 renamed as (
 
     select
